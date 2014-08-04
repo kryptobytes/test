@@ -34,9 +34,9 @@ QString BitcoinUnits::name(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("QQQ");
-    case mBTC: return QString("mQQQ");
-    case uBTC: return QString::fromUtf8("μQQQ");
+    case BTC: return QString("MKC");
+    case mBTC: return QString("mMKC");
+    case uBTC: return QString::fromUtf8("μMKC");
     default: return QString("???");
     }
 }
@@ -45,13 +45,13 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("XCoin");
-    case mBTC: return QString("milliXCoin (1 / 1,000)");
-    case uBTC: return QString("microXCoin (1 / 1,000,000)");
+    case BTC: return QString("test");
+    case mBTC: return QString("millitest (1 / 1,000)");
+    case uBTC: return QString("microtest (1 / 1,000,000)");
     default: return QString("???");
     }
 }
-//a single unit (.00000001) of XCoin is called a "wander."
+//a single unit (.00000001) of test is called a "wander."
 qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)
